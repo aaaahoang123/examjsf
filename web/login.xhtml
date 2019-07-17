@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+</h:head>
+
+<h:body>
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="5">
+            <h:outputText value="Username: "/>
+            <p:inputText value="#{login.user.username}"/>
+        </h:panelGrid>
+        <h:panelGrid columns="2" cellpadding="5">
+            <h:outputText value="Password: "/>
+            <p:inputText value="#{login.user.password}"/>
+        </h:panelGrid>
+        <p:commandButton value="Submit" action="#{login.doSubmit}">
+        </p:commandButton>
+    </h:form>
+</h:body>
+</html>
